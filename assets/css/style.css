@@ -217,6 +217,16 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 980px) {
+  /* changes i noticed: main-section is about 50% page width  with margin of 5% 20% 40% 5% */
+
+  .main-section {
+    width: 70%;
+    margin: 5%;
+  }
+
+  .work {
+    margin: 0;
+  }
 
 }
 
