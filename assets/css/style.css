@@ -19,10 +19,7 @@ body {
   clear: both;
 }
 
-h1,
-h2,
-h3,
-p {
+h1, h2, h3, p {
   margin-bottom: 20px;
 }
 
@@ -30,9 +27,7 @@ p:last-child {
   margin-bottom: 0;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
   color: #4aaaa5;
@@ -45,8 +40,7 @@ h1 {
   border-bottom: 3px solid #dddddd;
 }
 
-h2,
-h3 {
+h2, h3 {
   font-size: 22px;
 }
 
@@ -186,17 +180,12 @@ h3, h2 {
   margin-bottom: 10px;
 }
 
-label,
-input[type=text],
-input[type=email],
-textarea {
+label, input[type=text], input[type=email], textarea {
   display: block;
   width: 100%;
 }
 
-input[type=text],
-input[type=email],
-textarea {
+input[type=text], input[type=email], textarea {
   height: 35px;
   padding: 0 10px;
   font-size: 14px;
@@ -217,23 +206,49 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 980px) {
-  /* changes i noticed: main-section is about 50% page width  with margin of 5% 20% 40% 5% */
+  /* changes I noticed: main-section is about 50% page width  with margin of 5% 20% 40% 5% */
 
   .main-section {
-    width: 70%;
-    margin: 5%;
-  }
-
-  .work {
-    margin: 0;
+    width: 75%;
+    margin-left: 3%;
   }
 
 }
 
 @media screen and (max-width: 768px) {
+  .main-section {
+    width: 95%;
+    margin: 2%;
+  }
 
 }
 
 @media screen and (max-width: 640px) {
+  #masthead {
+    position: static;
+  }
   
+  #logo {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    clear: both;
+    display: block;
+    margin: 5px auto;
+    align-items: center;
+    padding-left: 150px;
+  }
+
+  #main-container {
+    padding-top: 5px;
+    min-height: 900px;
+  }
+
+  .work {
+    width: 100%;
+    position: relative;
+  }
+
 }
